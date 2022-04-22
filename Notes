@@ -1,6 +1,13 @@
 1. Create a clone of conda environment:
     conda create --name <environment> --clone base
 2. Use above created environment for project
+3. Installing tensorflow for MAC M1
+    chmod +x ~/Downloads/Miniforge3-MacOSX-arm64.sh
+    sh ~/Downloads/Miniforge3-MacOSX-arm64.sh
+    source ~/miniforge3/bin/activate
+    conda install -c apple tensorflow-deps
+    SYSTEM_VERSION_COMPAT=0 python -m pip install tensorflow-macos
+    SYSTEM_VERSION_COMPAT=0 python -m pip install tensorflow-metal
 
 
 

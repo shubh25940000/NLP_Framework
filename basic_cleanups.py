@@ -30,11 +30,11 @@ class basic_cleanups:
         elif self.source == 'LOCAL':
             df = pd.read_csv(self.file_name)
             return df
-    def clean_dataset(self, df, col='Text'):
+    def clean_dataset(self, col='Text'):
         #Assuming the data is sourced from wikipedia
             #1. Remove numbers inside square brackets
             #2. Remove '\n' and '\t'
-
+        df = self.source_data()
         if self.source == 'WEB':
             def sub(string):
                 import re
@@ -51,7 +51,8 @@ class basic_cleanups:
                 return re.sub(p1, '', re.sub(p2, '', string))
             df['Text_cleaned'] = df[col].apply(sub)
             return df
-    def lemma(self, df, col = 'Text'):
+    def lemma(self, col = 'Text_cleaned'):
+        df = self.clean_dataset()
         from nltk import NLTKWordTokenizer
         if self.stem == 'stemmer':
             from nltk.stem import PorterStemmer
