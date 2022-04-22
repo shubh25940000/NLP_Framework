@@ -1,4 +1,15 @@
 1. Create a clone of conda environment:
     conda create --name <environment> --clone base
 2. Use above created environment for project
-3.
+
+
+
+
+Requirements:
+1. Basic file cleanups: Done
+2. High level analysis of the file:
+    a. Top n words (excluding stop words)
+    b. Top n  name entities
+    c. Top n (n-grams)
+3. Low level analysis
+    a.
