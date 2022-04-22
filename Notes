@@ -1,0 +1,4 @@
+1. Create a clone of conda environment:
+    conda create --name <environment> --clone base
+2. Use above created environment for project
+3.
