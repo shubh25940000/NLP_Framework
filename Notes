@@ -15,8 +15,8 @@
 Requirements:
 1. Basic file cleanups: Done
 2. High level analysis of the file:
-    a. Top n words (excluding stop words)
-    b. Top n  name entities
+    a. Top n words (excluding stop words): Done
+    b. Top n  name entities: Done
     c. Top n (n-grams)
 3. Low level analysis
     a.

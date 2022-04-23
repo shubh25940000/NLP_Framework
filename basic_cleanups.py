@@ -8,8 +8,9 @@ pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 
 class basic_cleanups:
-    def __init__(self, source, url = None, file_name = None, stem = 'stemmer'):
+    def __init__(self, url = None, file_name = None, stem = 'stemmer',source = 'WEB', col = 'Text'):
         self.source = source
+        self.col = col
         self.url = url
         self.file_name = file_name
         self.stem = stem
@@ -29,12 +30,14 @@ class basic_cleanups:
             return df
         elif self.source == 'LOCAL':
             df = pd.read_csv(self.file_name)
+
             return df
-    def clean_dataset(self, col='Text'):
+    def clean_dataset(self):
         #Assuming the data is sourced from wikipedia
             #1. Remove numbers inside square brackets
             #2. Remove '\n' and '\t'
         df = self.source_data()
+        col = self.col
         if self.source == 'WEB':
             def sub(string):
                 import re
@@ -43,16 +46,20 @@ class basic_cleanups:
                 return re.sub(p1, '', re.sub(p2, '', string))
             df['Text_cleaned'] = df['Text'].apply(sub)
             return df
-        elif self.source == 'FILE':
+        elif self.source == 'LOCAL':
             def sub(string):
                 import re
                 p1 = re.compile("\[\d*\]")
                 p2 = re.compile("(\n)|(\t)")
-                return re.sub(p1, '', re.sub(p2, '', string))
+                p3 = re.compile('#')
+                p4 = re.compile('(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})')
+                return re.sub(p1, '', re.sub(p2, '', re.sub(p3, '', re.sub(p4, '', string))))
             df['Text_cleaned'] = df[col].apply(sub)
+
             return df
     def lemma(self, col = 'Text_cleaned'):
         df = self.clean_dataset()
+
         from nltk import NLTKWordTokenizer
         if self.stem == 'stemmer':
             from nltk.stem import PorterStemmer
