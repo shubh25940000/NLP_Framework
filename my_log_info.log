@@ -464,3 +464,195 @@
 7     israeli      28
 8      turkey      28
 9       india      26
+[Mon, 25 Apr 2022 10:16:23] INFO [keyedvectors.py._load_word2vec_format:1954] loading projection weights from glove.6B.300d.txt
+[Mon, 25 Apr 2022 10:16:23] DEBUG [smart_open_lib.py.open:170] {'uri': 'glove.6B.300d.txt', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'compression': None, 'transport_params': None}
+[Mon, 25 Apr 2022 10:16:24] DEBUG [smart_open_lib.py.open:170] {'uri': 'glove.6B.300d.txt', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'compression': None, 'transport_params': None}
+[Mon, 25 Apr 2022 10:17:10] DEBUG [utils.py.add_lifecycle_event:443] starting a new internal lifecycle event log for KeyedVectors
+[Mon, 25 Apr 2022 10:17:10] INFO [utils.py.add_lifecycle_event:447] KeyedVectors lifecycle event {'msg': 'loaded (400000, 300) matrix of type float32 from glove.6B.300d.txt', 'binary': False, 'encoding': 'utf8', 'datetime': '2022-04-25T10:17:10.461133', 'gensim': '4.1.2', 'python': '3.8.8 (default, Apr 13 2021, 12:59:45) \n[Clang 10.0.0 ]', 'platform': 'macOS-10.16-x86_64-i386-64bit', 'event': 'load_word2vec_format'}
+[Mon, 25 Apr 2022 10:17:40] INFO [basic_analysis.py.mostcommon:67] Below are the top 5 words:
+[Mon, 25 Apr 2022 10:17:40] INFO [basic_analysis.py.mostcommon:68]    word  number
+0     n     478
+1     t     459
+2   get     421
+3  like     393
+4    û_     344
+[Mon, 25 Apr 2022 10:17:40] INFO [basic_analysis.py.mostcommon:73] Below are the top 5 entities:
+[Mon, 25 Apr 2022 10:17:40] INFO [basic_analysis.py.mostcommon:74]          word  number
+0  california      80
+1       mh370      66
+2       japan      59
+3   hiroshima      41
+4       china      33
+5    malaysia      33
+6        u.s.      29
+7     israeli      28
+8      turkey      28
+9       india      26
+[Mon, 25 Apr 2022 12:01:01] INFO [keyedvectors.py._load_word2vec_format:1954] loading projection weights from glove.6B.300d.txt
+[Mon, 25 Apr 2022 12:01:01] DEBUG [smart_open_lib.py.open:170] {'uri': 'glove.6B.300d.txt', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'compression': None, 'transport_params': None}
+[Mon, 25 Apr 2022 12:01:02] DEBUG [smart_open_lib.py.open:170] {'uri': 'glove.6B.300d.txt', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'compression': None, 'transport_params': None}
+[Mon, 25 Apr 2022 12:01:49] DEBUG [utils.py.add_lifecycle_event:443] starting a new internal lifecycle event log for KeyedVectors
+[Mon, 25 Apr 2022 12:01:49] INFO [utils.py.add_lifecycle_event:447] KeyedVectors lifecycle event {'msg': 'loaded (400000, 300) matrix of type float32 from glove.6B.300d.txt', 'binary': False, 'encoding': 'utf8', 'datetime': '2022-04-25T12:01:49.428010', 'gensim': '4.1.2', 'python': '3.8.8 (default, Apr 13 2021, 12:59:45) \n[Clang 10.0.0 ]', 'platform': 'macOS-10.16-x86_64-i386-64bit', 'event': 'load_word2vec_format'}
+[Mon, 25 Apr 2022 12:02:20] INFO [basic_analysis.py.mostcommon:70] Below are the top 5 words:
+[Mon, 25 Apr 2022 12:02:20] INFO [basic_analysis.py.mostcommon:71]    word  number
+0     n     478
+1     t     459
+2   get     421
+3  like     393
+4    û_     344
+[Mon, 25 Apr 2022 12:02:20] INFO [basic_analysis.py.mostcommon:76] Below are the top 5 entities:
+[Mon, 25 Apr 2022 12:02:20] INFO [basic_analysis.py.mostcommon:77]          word  number
+0  california      80
+1       mh370      66
+2       japan      59
+3   hiroshima      41
+4       china      33
+5    malaysia      33
+6        u.s.      29
+7     israeli      28
+8      turkey      28
+9       india      26
+[Mon, 25 Apr 2022 12:03:18] INFO [keyedvectors.py._load_word2vec_format:1954] loading projection weights from glove.6B.300d.txt
+[Mon, 25 Apr 2022 12:03:18] DEBUG [smart_open_lib.py.open:170] {'uri': 'glove.6B.300d.txt', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'compression': None, 'transport_params': None}
+[Mon, 25 Apr 2022 12:03:19] DEBUG [smart_open_lib.py.open:170] {'uri': 'glove.6B.300d.txt', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'compression': None, 'transport_params': None}
+[Mon, 25 Apr 2022 12:04:05] DEBUG [utils.py.add_lifecycle_event:443] starting a new internal lifecycle event log for KeyedVectors
+[Mon, 25 Apr 2022 12:04:05] INFO [utils.py.add_lifecycle_event:447] KeyedVectors lifecycle event {'msg': 'loaded (400000, 300) matrix of type float32 from glove.6B.300d.txt', 'binary': False, 'encoding': 'utf8', 'datetime': '2022-04-25T12:04:05.556351', 'gensim': '4.1.2', 'python': '3.8.8 (default, Apr 13 2021, 12:59:45) \n[Clang 10.0.0 ]', 'platform': 'macOS-10.16-x86_64-i386-64bit', 'event': 'load_word2vec_format'}
+[Mon, 25 Apr 2022 12:04:36] INFO [basic_analysis.py.mostcommon:70] Below are the top 5 words:
+[Mon, 25 Apr 2022 12:04:36] INFO [basic_analysis.py.mostcommon:71]    word  number
+0     n     478
+1     t     459
+2   get     421
+3  like     393
+4    û_     344
+[Mon, 25 Apr 2022 12:04:36] INFO [basic_analysis.py.mostcommon:76] Below are the top 5 entities:
+[Mon, 25 Apr 2022 12:04:36] INFO [basic_analysis.py.mostcommon:77]          word  number
+0  california      80
+1       mh370      66
+2       japan      59
+3   hiroshima      41
+4       china      33
+5    malaysia      33
+6        u.s.      29
+7     israeli      28
+8      turkey      28
+9       india      26
+[Mon, 25 Apr 2022 12:11:59] INFO [keyedvectors.py._load_word2vec_format:1954] loading projection weights from glove.6B.300d.txt
+[Mon, 25 Apr 2022 12:11:59] DEBUG [smart_open_lib.py.open:170] {'uri': 'glove.6B.300d.txt', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'compression': None, 'transport_params': None}
+[Mon, 25 Apr 2022 12:11:59] DEBUG [smart_open_lib.py.open:170] {'uri': 'glove.6B.300d.txt', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'compression': None, 'transport_params': None}
+[Mon, 25 Apr 2022 12:12:47] DEBUG [utils.py.add_lifecycle_event:443] starting a new internal lifecycle event log for KeyedVectors
+[Mon, 25 Apr 2022 12:12:47] INFO [utils.py.add_lifecycle_event:447] KeyedVectors lifecycle event {'msg': 'loaded (400000, 300) matrix of type float32 from glove.6B.300d.txt', 'binary': False, 'encoding': 'utf8', 'datetime': '2022-04-25T12:12:47.132936', 'gensim': '4.1.2', 'python': '3.8.8 (default, Apr 13 2021, 12:59:45) \n[Clang 10.0.0 ]', 'platform': 'macOS-10.16-x86_64-i386-64bit', 'event': 'load_word2vec_format'}
+[Mon, 25 Apr 2022 12:13:17] INFO [basic_analysis.py.mostcommon:70] Below are the top 5 words:
+[Mon, 25 Apr 2022 12:13:17] INFO [basic_analysis.py.mostcommon:71]    word  number
+0     n     478
+1     t     459
+2   get     421
+3  like     393
+4    û_     344
+[Mon, 25 Apr 2022 12:13:17] INFO [basic_analysis.py.mostcommon:76] Below are the top 5 entities:
+[Mon, 25 Apr 2022 12:13:17] INFO [basic_analysis.py.mostcommon:77]          word  number
+0  california      80
+1       mh370      66
+2       japan      59
+3   hiroshima      41
+4       china      33
+5    malaysia      33
+6        u.s.      29
+7     israeli      28
+8      turkey      28
+9       india      26
+[Mon, 25 Apr 2022 12:17:53] INFO [keyedvectors.py._load_word2vec_format:1954] loading projection weights from glove.6B.300d.txt
+[Mon, 25 Apr 2022 12:17:53] DEBUG [smart_open_lib.py.open:170] {'uri': 'glove.6B.300d.txt', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'compression': None, 'transport_params': None}
+[Mon, 25 Apr 2022 12:17:54] DEBUG [smart_open_lib.py.open:170] {'uri': 'glove.6B.300d.txt', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'compression': None, 'transport_params': None}
+[Mon, 25 Apr 2022 12:18:40] DEBUG [utils.py.add_lifecycle_event:443] starting a new internal lifecycle event log for KeyedVectors
+[Mon, 25 Apr 2022 12:18:40] INFO [utils.py.add_lifecycle_event:447] KeyedVectors lifecycle event {'msg': 'loaded (400000, 300) matrix of type float32 from glove.6B.300d.txt', 'binary': False, 'encoding': 'utf8', 'datetime': '2022-04-25T12:18:40.497908', 'gensim': '4.1.2', 'python': '3.8.8 (default, Apr 13 2021, 12:59:45) \n[Clang 10.0.0 ]', 'platform': 'macOS-10.16-x86_64-i386-64bit', 'event': 'load_word2vec_format'}
+[Mon, 25 Apr 2022 12:19:11] INFO [basic_analysis.py.mostcommon:70] Below are the top 5 words:
+[Mon, 25 Apr 2022 12:19:11] INFO [basic_analysis.py.mostcommon:71]    word  number
+0     n     478
+1     t     459
+2   get     421
+3  like     393
+4    û_     344
+[Mon, 25 Apr 2022 12:19:11] INFO [basic_analysis.py.mostcommon:76] Below are the top 5 entities:
+[Mon, 25 Apr 2022 12:19:11] INFO [basic_analysis.py.mostcommon:77]          word  number
+0  california      80
+1       mh370      66
+2       japan      59
+3   hiroshima      41
+4       china      33
+5    malaysia      33
+6        u.s.      29
+7     israeli      28
+8      turkey      28
+9       india      26
+[Mon, 25 Apr 2022 12:21:21] INFO [keyedvectors.py._load_word2vec_format:1954] loading projection weights from glove.6B.300d.txt
+[Mon, 25 Apr 2022 12:21:21] DEBUG [smart_open_lib.py.open:170] {'uri': 'glove.6B.300d.txt', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'compression': None, 'transport_params': None}
+[Mon, 25 Apr 2022 12:21:21] DEBUG [smart_open_lib.py.open:170] {'uri': 'glove.6B.300d.txt', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'compression': None, 'transport_params': None}
+[Mon, 25 Apr 2022 12:22:07] DEBUG [utils.py.add_lifecycle_event:443] starting a new internal lifecycle event log for KeyedVectors
+[Mon, 25 Apr 2022 12:22:07] INFO [utils.py.add_lifecycle_event:447] KeyedVectors lifecycle event {'msg': 'loaded (400000, 300) matrix of type float32 from glove.6B.300d.txt', 'binary': False, 'encoding': 'utf8', 'datetime': '2022-04-25T12:22:07.670411', 'gensim': '4.1.2', 'python': '3.8.8 (default, Apr 13 2021, 12:59:45) \n[Clang 10.0.0 ]', 'platform': 'macOS-10.16-x86_64-i386-64bit', 'event': 'load_word2vec_format'}
+[Mon, 25 Apr 2022 12:22:38] INFO [basic_analysis.py.mostcommon:70] Below are the top 5 words:
+[Mon, 25 Apr 2022 12:22:38] INFO [basic_analysis.py.mostcommon:71]    word  number
+0     n     478
+1     t     459
+2   get     421
+3  like     393
+4    û_     344
+[Mon, 25 Apr 2022 12:22:38] INFO [basic_analysis.py.mostcommon:76] Below are the top 5 entities:
+[Mon, 25 Apr 2022 12:22:38] INFO [basic_analysis.py.mostcommon:77]          word  number
+0  california      80
+1       mh370      66
+2       japan      59
+3   hiroshima      41
+4       china      33
+5    malaysia      33
+6        u.s.      29
+7     israeli      28
+8      turkey      28
+9       india      26
+[Mon, 25 Apr 2022 12:28:55] INFO [keyedvectors.py._load_word2vec_format:1954] loading projection weights from glove.6B.300d.txt
+[Mon, 25 Apr 2022 12:28:55] DEBUG [smart_open_lib.py.open:170] {'uri': 'glove.6B.300d.txt', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'compression': None, 'transport_params': None}
+[Mon, 25 Apr 2022 12:28:56] DEBUG [smart_open_lib.py.open:170] {'uri': 'glove.6B.300d.txt', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'compression': None, 'transport_params': None}
+[Mon, 25 Apr 2022 12:29:42] DEBUG [utils.py.add_lifecycle_event:443] starting a new internal lifecycle event log for KeyedVectors
+[Mon, 25 Apr 2022 12:29:42] INFO [utils.py.add_lifecycle_event:447] KeyedVectors lifecycle event {'msg': 'loaded (400000, 300) matrix of type float32 from glove.6B.300d.txt', 'binary': False, 'encoding': 'utf8', 'datetime': '2022-04-25T12:29:42.750515', 'gensim': '4.1.2', 'python': '3.8.8 (default, Apr 13 2021, 12:59:45) \n[Clang 10.0.0 ]', 'platform': 'macOS-10.16-x86_64-i386-64bit', 'event': 'load_word2vec_format'}
+[Mon, 25 Apr 2022 12:30:13] INFO [basic_analysis.py.mostcommon:70] Below are the top 5 words:
+[Mon, 25 Apr 2022 12:30:13] INFO [basic_analysis.py.mostcommon:71]    word  number
+0     n     478
+1     t     459
+2   get     421
+3  like     393
+4    û_     344
+[Mon, 25 Apr 2022 12:30:13] INFO [basic_analysis.py.mostcommon:76] Below are the top 5 entities:
+[Mon, 25 Apr 2022 12:30:13] INFO [basic_analysis.py.mostcommon:77]          word  number
+0  california      80
+1       mh370      66
+2       japan      59
+3   hiroshima      41
+4       china      33
+5    malaysia      33
+6        u.s.      29
+7     israeli      28
+8      turkey      28
+9       india      26
+[Mon, 25 Apr 2022 12:31:56] INFO [keyedvectors.py._load_word2vec_format:1954] loading projection weights from glove.6B.300d.txt
+[Mon, 25 Apr 2022 12:31:56] DEBUG [smart_open_lib.py.open:170] {'uri': 'glove.6B.300d.txt', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'compression': None, 'transport_params': None}
+[Mon, 25 Apr 2022 12:31:57] DEBUG [smart_open_lib.py.open:170] {'uri': 'glove.6B.300d.txt', 'mode': 'rb', 'buffering': -1, 'encoding': None, 'errors': None, 'newline': None, 'closefd': True, 'opener': None, 'ignore_ext': False, 'compression': None, 'transport_params': None}
+[Mon, 25 Apr 2022 12:32:43] DEBUG [utils.py.add_lifecycle_event:443] starting a new internal lifecycle event log for KeyedVectors
+[Mon, 25 Apr 2022 12:32:43] INFO [utils.py.add_lifecycle_event:447] KeyedVectors lifecycle event {'msg': 'loaded (400000, 300) matrix of type float32 from glove.6B.300d.txt', 'binary': False, 'encoding': 'utf8', 'datetime': '2022-04-25T12:32:43.626095', 'gensim': '4.1.2', 'python': '3.8.8 (default, Apr 13 2021, 12:59:45) \n[Clang 10.0.0 ]', 'platform': 'macOS-10.16-x86_64-i386-64bit', 'event': 'load_word2vec_format'}
+[Mon, 25 Apr 2022 12:33:13] INFO [basic_analysis.py.mostcommon:70] Below are the top 5 words:
+[Mon, 25 Apr 2022 12:33:13] INFO [basic_analysis.py.mostcommon:71]    word  number
+0     n     478
+1     t     459
+2   get     421
+3  like     393
+4    û_     344
+[Mon, 25 Apr 2022 12:33:13] INFO [basic_analysis.py.mostcommon:76] Below are the top 5 entities:
+[Mon, 25 Apr 2022 12:33:13] INFO [basic_analysis.py.mostcommon:77]          word  number
+0  california      80
+1       mh370      66
+2       japan      59
+3   hiroshima      41
+4       china      33
+5    malaysia      33
+6        u.s.      29
+7     israeli      28
+8      turkey      28
+9       india      26

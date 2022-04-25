@@ -152,6 +152,7 @@ cython_debug/
 glove.6B.300d.txt
 test.csv
 train.csv
+Submission_output.csv
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can

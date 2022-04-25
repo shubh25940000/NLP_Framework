@@ -8,12 +8,13 @@ pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 
 class basic_cleanups:
-    def __init__(self, url = None, file_name = None, stem = 'stemmer',source = 'WEB', col = 'Text'):
+    def __init__(self, url = None, file_name = None, test_file_name = None, stem = 'stemmer',source = 'WEB', col = 'Text'):
         self.source = source
         self.col = col
         self.url = url
         self.file_name = file_name
         self.stem = stem
+        self.test_file_name = test_file_name
 
     def source_data(self):
         if self.source == 'WEB':
@@ -30,13 +31,14 @@ class basic_cleanups:
             return df
         elif self.source == 'LOCAL':
             df = pd.read_csv(self.file_name)
+            df_test = pd.read_csv(self.test_file_name)
 
-            return df
+            return df, df_test
     def clean_dataset(self):
         #Assuming the data is sourced from wikipedia
             #1. Remove numbers inside square brackets
             #2. Remove '\n' and '\t'
-        df = self.source_data()
+        df, df_test = self.source_data()
         col = self.col
         if self.source == 'WEB':
             def sub(string):
@@ -55,10 +57,11 @@ class basic_cleanups:
                 p4 = re.compile('(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})')
                 return re.sub(p1, '', re.sub(p2, '', re.sub(p3, '', re.sub(p4, '', string))))
             df['Text_cleaned'] = df[col].apply(sub)
+            df_test['Text_cleaned'] = df_test[col].apply(sub)
 
-            return df
+            return df, df_test
     def lemma(self, col = 'Text_cleaned'):
-        df = self.clean_dataset()
+        df, df_test = self.clean_dataset()
 
         from nltk import NLTKWordTokenizer
         if self.stem == 'stemmer':
@@ -70,7 +73,8 @@ class basic_cleanups:
                 x = ' '.join([stem.stem(i).lower() for i in x])
                 return x
             df['Stemmed'] = df[col].apply(stemming)
-            return df
+            df_test['Stemmed'] = df_test[col].apply(stemming)
+            return df, df_test
         elif self.stem == 'lemmatize':
             from nltk.stem import WordNetLemmatizer
             TOK = NLTKWordTokenizer()
@@ -92,4 +96,5 @@ class basic_cleanups:
                 x = ' '.join(j)
                 return x
             df['Lemmatized'] = df[col].apply(lemmatize)
-            return df
+            df_test['Lemmatized'] = df_test[col].apply(lemmatize)
+            return df, df_test
